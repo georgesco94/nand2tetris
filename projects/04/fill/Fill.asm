@@ -13,7 +13,6 @@
 
 
 // Put your code here.
-
 @8192
 D=A
 @num_screen_registers
@@ -22,13 +21,11 @@ M=D
 (LOOP)
   @i
   M=0
-
   // 1. If KBD==0: keep looping
   @KBD
   D=M
   @WHITEN
   D;JEQ
-
   // 2. Else: blacken the screen
 (SCREEN_LOOP)
   @i
@@ -49,7 +46,6 @@ M=D
   M=M+1
   @SCREEN_LOOP
   0;JMP
-
 
 (WHITEN)
   @i
